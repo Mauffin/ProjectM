@@ -14,11 +14,11 @@ function App() {
  let countUpAnim3;
 
 
-  useEffect(()=>{
-    initCountUp();
-    initCountUp2();
-    initCountUp3();
-  },);
+  // useEffect(()=>{
+  //   initCountUp();
+  //   initCountUp2();
+  //   initCountUp3();
+  // },);
 
   // async function initCountUp2(){
   //   const countUpModule2 = await import('countup.js');
@@ -139,7 +139,121 @@ function App() {
       <div className='bg-patasdog bg-no-repeat'></div>
       </div>
       </section>
+
+      <section className='max-w-[1080px] w-screen h-[30rem]  mx-auto border '>
+        <div className='  grid grid-cols-3  grid-rows-1 gap-4 border '>
+
+          <div className='border h-96 flex flex-col flex-row-3  '>
+            
+            <div className='flex justify-center h-20 border  mb-10  mt-20'> <img className='rounded-full h-20 ' src="../src/assets/undog.svg" alt="" /></div>
+             
+              <div className='flex justify-center h-10 border'>
+                <p>aca ira el nombre</p>
+              </div>
+              
+            <div className='flex justify-center h-10 border'>
+              <p className='text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              amet consectetur adipisicin
+                </p>
+            </div>
+          </div>
+
+          <div className='border h-96 flex flex-col flex-row-3  '>
+            
+            <div className='flex justify-center h-20 border  mb-10  mt-20'> <img className='rounded-full h-20 ' src="../src/assets/undog.svg" alt="" /></div>
+             
+              <div className='flex justify-center h-10 border'>
+                <p>aca ira el nombre</p>
+              </div>
+              
+            <div className='flex justify-center h-10 border'>
+              <p className='text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              amet consectetur adipisicin
+                </p>
+            </div>
+          </div>
+
+          <div className='border h-96 flex flex-col flex-row-3  '>
+            
+            <div className='flex justify-center h-20 border  mb-10  mt-20'> <img className='rounded-full h-20 ' src="../src/assets/undog.svg" alt="" /></div>
+             
+              <div className='flex justify-center h-10 border'>
+                <p>aca ira el nombre</p>
+              </div>
+              
+            <div className='flex justify-center h-10 border'>
+              <p className='text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              amet consectetur adipisicin
+                </p>
+            </div>
+          </div>
+
+          
+
+          
+
+        </div>
+      </section>
      
+     <footer  className='mx-auto max-w-[1080px] w-screen h-60 mt-20 bg-[#EFEFEF]'>
+      <div className='grid grid-cols-4 grid-rows-1 border-x bg-[#EFEFEF]'>
+        <div className='h-44 border-x flex flex-col-2 flex-row-2'>
+          <div className=''>
+            <img className='h-9 w-9' src="../src/assets/perro.png" alt="logo" />
+            
+          </div>
+          <br />
+          <p>PerreraPerra</p>
+           <div>
+            asd
+            </div> 
+            
+        </div>
+
+        <div className='h-44 border-x flex flex-col flex-row-3'>
+          <h1 className=' font-bold'>Social</h1>
+            <div><br /></div>
+            <div>Damiancardenas22@gmail.com</div>
+            <br />
+            <div className='flex justify-around'> 
+              <a href='www.instagram.com' alt='instagram'>
+              <img className='h-8' src="../src/assets/insta.png" alt="" />
+              </a> 
+              <a href='www.twitter.com'>
+              <img className='h-8' src="../src/assets/twitter.png" alt="" />
+              </a>
+              <a href='wwww.linkedin.com'>
+              <img className='h-8' src="../src/assets/linkedin.png" alt="" />
+              </a>
+              <a  href='www.facebook.com'>
+                <img className='h-8'src="../src/assets/facebook.png" alt="" />
+              </a>
+              </div>
+        </div>
+
+        <div className='h-44 border-x'>
+          <h1 className=' font-bold'>Quick Links</h1>
+          <br />
+          
+          <p>About</p>
+          <p>Category</p>
+          <p>Testimonial</p>
+          <p>Contact</p>
+          </div>
+        <div className='h-44 border-x'>
+        <h1 className='font-bold'>Location & Contact</h1>
+          <br />
+        
+          <p className=' text-slate-500  text-base'>Av. del Parque 4722, Huechuraba, 8580644 Santiago, Región Metropolitana</p>
+        </div>
+      </div>
+     </footer>
+
+     <footer className='mx-auto max-w-[1080px] flex justify-center'>
+      
+        <p>Designed And Developed by Damian Cardenas</p>
+        
+     </footer>
 
       
     </>
