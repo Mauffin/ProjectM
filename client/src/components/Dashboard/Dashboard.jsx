@@ -1,7 +1,7 @@
-import "./App.css";
-import { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 
-function App() {
+function Dashboard () {
+
   const countupRef = useRef(null);
   let countUpAnim;
 
@@ -62,7 +62,6 @@ function App() {
       console.error(countUpAnim3.error);
     }
   }
-
   return (
     <>
       menu
@@ -116,10 +115,7 @@ function App() {
         </div>
         <div className="h-32 grid place-content-center">
           <h1
-            ref={countupRef3}
-            onScroll={() => {
-              countUpAnim3.start();
-            }}
+            ref={countupRef3}onScroll={() => {countUpAnim3.start();}}
           >
             3
           </h1>
@@ -295,4 +291,4 @@ function App() {
   );
 }
 
-export default App;
+export default Dashboard

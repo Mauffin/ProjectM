@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const Schema_Pet = new mongoose.Schema({
-  pet_Name:{
+  petName:{
     type:String,
     required:[true,'el campo debe ser obligatorio'],
     minlength:[3,'debe contar con 3 caracteres minimo']
@@ -11,6 +11,10 @@ const Schema_Pet = new mongoose.Schema({
     required:[true,'el campo es obligatorio'],
     minlength:[3,'debe contar con 3 caracteres minimo'],
 
+  },
+  petGender:{
+    type:String,
+    required:[true,""]
   },
   petDescription:{
     type:String,
@@ -27,4 +31,4 @@ const Schema_Pet = new mongoose.Schema({
 },{timestamps:true,versionKey:false})
 
 const Pet = mongoose.model("Schema_Pet",Schema_Pet);
-module.export= Pet
+module.exports= Pet;
