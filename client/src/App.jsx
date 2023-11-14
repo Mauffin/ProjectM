@@ -87,11 +87,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="">
-          <img src="../src/assets/wave.svg" alt="" />
-        </div>
+        
       </div>
-      <section className="mx-auto text-3xl pt-24  max-w-[1080px] w-full grid grid-cols-3 grid-rows-1 gap-4 border-r-red-300  ">
+      <section className="mx-auto text-3xl  pt-32 max-w-[1080px] w-full grid grid-cols-3 grid-rows-1 gap-4 border-r-red-300  ">
         <div className="h-32  grid place-content-center ">
           <h1
             ref={countupRef}
@@ -126,29 +124,31 @@ function App() {
           <span>por adoptar</span>
         </div>
       </section>
-      <div className="flex flex-col pt-32  bg-fill bg-no-repeat z-40">
-        <div className="flex justify-center">
-          <p> Sobre el Proyecto </p>
+      
+      <div className="  ">
+          <img src="../src/assets/wave.svg" alt="" />
         </div>
-      </div>
-      <section className="mx-auto bg-[#baf264] mt-32 max-w-[1080px] w-full grid grid-cols-1 grid-rows-1 sm:grid-cols-2">
-        <div>
+      <div className="bg-[#baf264]">
+      <section className=" mx-auto  max-w-[1080px] w-full grid grid-cols-1 grid-rows-1 sm:grid-cols-2">
+        <div className="">
           <img src="./src/assets/undog.svg" alt="" />
         </div>
-        <div>
+        <div  className=" w-[29rem] mx-auto pt-6">
           <p className="text-xl">Problema</p>
-          <p>
+          <p className=" text-lg">
             La gente generalmente trata de comprar mascotas en lugar de tomarlas
             de los refugios en el mundo moderno. El número de mascotas en los
             refugios es cada vez más difícil para los voluntarios cuidarlas
           </p>
         </div>
       </section>
+      </div>
+      <div className="bg-[#baf264]">
       <section className="mx-auto pt-32 max-w-[1080px] bg-[#baf264] w-full grid grid-cols-1 grid-rows-1 sm:grid-cols-2">
-        <div>
+        <div className="mx-auto w-[29rem]">
           <p className="text-xl">Solución:</p>
-          <p>
-            {" "}
+          <p className="text-lg">
+            
             Esta aplicación tiene como objetivo proporcionar ayuda a las
             mascotas sin hogar Las personas podrán familiarizarse en detalle con
             cada mascota del refugio, adoptarlas o también hacer una donación
@@ -156,16 +156,17 @@ function App() {
           </p>
         </div>
 
-        <div className="">
-          <img src="./src/assets/undogsvg.svg" className="" alt="" />
+        <div className="w-96 h-96">
+          <img src="./src/assets/undogsvg.svg" className="h-96" alt="" />
           <div className="bg-patasdog bg-no-repeat"></div>
         </div>
       </section>
-      <section className="max-w-[1080px] w-screen h-[30rem]  mx-auto border ">
-        <div className="  grid grid-cols-3  grid-rows-1 gap-4 border ">
-          <div className="border h-96 flex flex-col flex-row-3  ">
-            <div className="flex justify-center h-20 border  mb-10  mt-20">
-              {" "}
+      </div>
+      <section className="max-w-[1080px] w-screen h-[30rem]  mx-auto  ">
+        <div className="  grid grid-cols-3  grid-rows-1 gap-4  ">
+          <div className="h-96 flex flex-col flex-row-3  justify-center ">
+            <div className="flex justify-center h-20   mb-10  mt-20">
+         
               <img
                 className="rounded-full h-20 w-20 "
                 src="../src/assets/pexel1.jpg"
@@ -173,11 +174,11 @@ function App() {
               />
             </div>
 
-            <div className="flex justify-center h-10 border">
+            <div className="flex justify-center h-10 ">
               <p>Yarella</p>
             </div>
 
-            <div className="flex justify-center h-10 border">
+            <div className="flex justify-center h-10">
               <p className="text-center">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. amet
                 consectetur adipisicin
@@ -185,8 +186,8 @@ function App() {
             </div>
           </div>
 
-          <div className="border h-96 flex flex-col flex-row-3  ">
-            <div className="flex justify-center h-20 border  mb-10  mt-20">
+          <div className=" h-96 flex flex-col flex-row-3 justify-center  ">
+            <div className="flex justify-center h-20   mb-10  mt-20 ">
               {" "}
               <img
                 className="rounded-full h-20 w-20 "
@@ -195,11 +196,11 @@ function App() {
               />
             </div>
 
-            <div className="flex justify-center h-10 border">
+            <div className="flex justify-center h-10 ">
               <p>Moises</p>
             </div>
 
-            <div className="flex justify-center h-10 border">
+            <div className="flex justify-center h-10 ">
               <p className="text-center">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. amet
                 consectetur adipisicin
@@ -207,8 +208,8 @@ function App() {
             </div>
           </div>
 
-          <div className="border h-96 flex flex-col flex-row-3  ">
-            <div className="flex justify-center h-20 border  mb-10  mt-20">
+          <div className=" h-96 flex flex-col flex-row-3 justify-center ">
+            <div className="flex justify-center h-20   mb-10  mt-20">
               {" "}
               <img
                 className="rounded-full h-20 w-20"
@@ -217,11 +218,11 @@ function App() {
               />
             </div>
 
-            <div className="flex justify-center h-10 border">
+            <div className="flex justify-center h-10">
               <p>Mariano</p>
             </div>
 
-            <div className="flex justify-center h-10 border">
+            <div className="flex justify-center h-10 ">
               <p className="text-center">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. amet
                 consectetur adipisicin
@@ -230,22 +231,23 @@ function App() {
           </div>
         </div>
       </section>
-      <footer className="mx-auto max-w-[1080px] w-screen  mt-20 bg-[#baf264]">
-        <div className="grid grid-cols-4 grid-rows-1 border-x bg-[#baf264]">
-          <div className="h-44 border-x flex flex-col-2 flex-row-2">
+      <div className=" bg-[#f6fee7] border border-[#9ee635] ">
+      <footer className="mx-auto max-w-[1080px] w-screen pt-20">
+        <div className="grid grid-cols-4 grid-rows-1">
+          <div className="h-44  flex flex-col-2 flex-row-2">
             <div className="">
               <img
-                className="h-9 w-9"
-                src="../src/assets/perro.png"
+                className="h-28 w-28"
+                src="../src/assets/logo.png"
                 alt="logo"
               />
             </div>
             <br />
-            <p>PerreraPerra</p>
-            <div>asd</div>
+            <p>perrito muffin</p>
+            <div></div>
           </div>
 
-          <div className="h-44 border-x flex flex-col flex-row-3">
+          <div className="h-44 flex flex-col flex-row-3">
             <h1 className=" font-bold">Social</h1>
             <div>
               <br />
@@ -268,7 +270,7 @@ function App() {
             </div>
           </div>
 
-          <div className="h-44 border-x">
+          <div className="h-44 ">
             <h1 className=" font-bold">Quick Links</h1>
             <br />
 
@@ -277,7 +279,7 @@ function App() {
             <p>Testimonial</p>
             <p>Contact</p>
           </div>
-          <div className="h-44 border-x">
+          <div className="h-44 ">
             <h1 className="font-bold">Location & Contact</h1>
             <br />
 
@@ -288,6 +290,7 @@ function App() {
           </div>
         </div>
       </footer>
+      </div>
       <footer className="mx-auto max-w-[1080px] flex justify-center">
         <p>Designed And Developed by Damian Cardenas</p>
       </footer>

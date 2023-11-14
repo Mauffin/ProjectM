@@ -1,7 +1,7 @@
 const Pet = require('../model/pet.model');
 
 module.exports.Create_Pet = (req,res)=>{
-  // Pet.create(req.body)
+
   Pet.create(req.body)
     .then(pet=>res.json(pet))
     .catch(err=>res.status(400).json(err));
