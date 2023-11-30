@@ -57,7 +57,7 @@ const Pet = () => {
       </div>
 
       <form onSubmit={savePet} action='/upload' encType='multipart/form-data'>
-      <div className='mx-auto h-[23rem]  max-w-[1080px] w-screen border'>
+      <div className='mx-auto h-[23rem]  max-w-[1090px] w-screen border'>
         
         <div className=" grid grid-cols-1 grid-rows-1 gap-4 ">
 
@@ -65,11 +65,11 @@ const Pet = () => {
           
             
             <input type="text" placeholder="Nombre" value={petName}
-        onChange={(e)=>setPetName(e.target.value)}
-         className="input input-bordered input-primary w-full max-w-xs" />
+            onChange={(e)=>setPetName(e.target.value)}
+            className="input input-bordered input-primary w-full max-w-xs" />
             {errors.petName ? <span className="text-danger">{errors.petName.message}</span>: null}
             
-            <input type="text" value={petType} id='petType' onChange={(e)=>setPetType(e.target.value)} placeholder="perro o gato" className="input  input-bordered border-lime-500 bg-white  w-full max-w-xs " />
+            <input type="text" value={petType} id='petType' onChange={(e)=>setPetType(e.target.value)} placeholder="perro o gato" className="input  input-bordered  input-primary w-full max-w-xs " />
             {errors.petType ? <span className="text-danger">{errors.petType.message}</span>: null} 
             
             
