@@ -11,8 +11,8 @@ export default {
       backgroundImage: {
         'herodog': "url('../src/assets/dog1.svg')",
         'patasdog': "url('../src/assets/patitas1.svg')",
-        'dogostep':"url(../src/assets/dogstep.svg)"
-        
+        'dogostep':"url(../src/assets/dogstep.svg)",
+        'fullsteps':"url(../src/assets/frame.png)"
       }
 
     },

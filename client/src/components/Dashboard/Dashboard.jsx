@@ -124,7 +124,7 @@ function Dashboard () {
       </section>
       <div className="flex flex-col pt-32  bg-fill bg-no-repeat z-40">
         <div className="flex justify-center">
-          <p> animo muffin </p>
+          <p> </p>
         </div>
       </div>
       <section className="mx-auto bg-[#baf264] mt-32 max-w-[1920px] w-screen w-full grid grid-cols-1 grid-rows-1 sm:grid-cols-2">

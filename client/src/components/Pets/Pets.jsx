@@ -1,9 +1,19 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import { useNavigate,Link } from 'react-router-dom';
+
 
 const Pets = () => {
 
   const[pet,setPets] = useState([]);
+  const navigateTo = useNavigate();
+
+  const handleClick = () =>{
+    navigateTo('/pets/new')
+  }
+  const handleClickhome = ()=>{
+    navigateTo('/')
+  }
 
   useEffect(()=>{
     axios.get('http://localhost:8000/show/pets')
@@ -17,9 +27,12 @@ const Pets = () => {
 
   return (
     <>
-    <div className='mx-auto max-w-[1200px] w-full border'>
-      <header className="mx-auto max-w-[1200px] w-full border-red-500">
-       horizontal 
+    <div className='bg-fullsteps  h-[1000px] '>
+    <div className='mx-auto max-w-[1200px] w-full '>
+      <header className="mx-auto flex justify-end max-w-[1200px] w-full border-red-500">
+       <button className='btn  btn-accent' onClick={handleClick}> Ficha ingreso </button>
+      
+      <button className='btn  btn-accent' onClick={handleClickhome }> home </button>
       </header>
 
       <section className="mx-auto h-96  max-w-[1200px] w-full border ">
@@ -29,10 +42,11 @@ const Pets = () => {
     <thead>
       <tr>
         <th>N</th>
+        <th>Details</th>
         <th>Name</th>
         <th>Type</th>
-        <th>Genero</th>
-        <th>Descripcion</th>
+        <th>Gender</th>
+        
       </tr>
     </thead>
     <tbody>
@@ -41,10 +55,11 @@ const Pets = () => {
       <tr key={index}>
 
         <td>{index}</td>
+        <td><Link className='btn btn-secondary' to={`/pet/${pets._id}`}>details</Link></td>
         <td>{pets.petName}</td>
         <td>{pets.petType}</td>
         <td>{pets.petGender}</td>
-        <td>{pets.petDescription}</td>
+        
       </tr>
         ))
       }
@@ -53,6 +68,7 @@ const Pets = () => {
 </div>
       </section>
 
+    </div>
     </div>
     </>
   )

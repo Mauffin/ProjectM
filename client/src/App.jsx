@@ -1,4 +1,5 @@
 import "./App.css";
+import { Navigate, useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
 function App() {
@@ -10,6 +11,13 @@ function App() {
 
   const countupRef3 = useRef(null);
   let countUpAnim3;
+
+  const navigateTo = useNavigate()
+
+  const handleClick =()=>{
+    navigateTo('/show/pets');
+  }
+
 
   useEffect(() => {
     initCountUp();
@@ -79,7 +87,7 @@ function App() {
             <div></div>
             <div className="flex flex-col h-32  pt-20">
               <div className="flex justify-center ">
-                <button className=" h-10 w-32 rounded-full  bg-[#68a30d] text-base text-white ">
+                <button className="btn btn-accent h-10 w-32   bg-[#68a30d] text-base text-white " onClick={handleClick}>
                   {" "}
                   Adopted me
                 </button>
